@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar N-Rainhas",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-o",
+                "n_queens_pilha", // Nome do executável
+                "n_queens_pilha.c", // Arquivo principal
+                "pilha.c" // Arquivo da pilha
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
